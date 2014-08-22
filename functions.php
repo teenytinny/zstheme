@@ -44,7 +44,11 @@ function fullscreen_theme_nav() {
 }
 
 // Allow Custom Background Image
-add_custom_background();
+add_custom_background( 'my_custom_background_callback' );
+function my_custom_background_callback() {
+	/* Get the background image. */
+	//$image = get_background_image();
+}
 
 // Load Post Images
 require_once (THEMELIB . '/images.php');
